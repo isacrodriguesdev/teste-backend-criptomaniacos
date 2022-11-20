@@ -30,15 +30,19 @@ CREATE TABLE users (
 );
 ```
   
+```
 CREATE TABLE wallets (
-    id serial PRIMARY KEY,
-    uuid VARCHAR (255) UNIQUE NOT NULL,
-    user_id INTEGER NOT NULL,
-    balance FLOAT NOT NULL,
-    asset VARCHAR(4) NOT NULL,
-    created_at TIMESTAMP NOT NULL,
-    updated_at TIMESTAMP
+id serial PRIMARY KEY,
+uuid VARCHAR (255) UNIQUE NOT NULL,
+user_id INTEGER NOT NULL,
+balance FLOAT NOT NULL,
+asset VARCHAR(4) NOT NULL,
+created_at TIMESTAMP NOT NULL,
+updated_at TIMESTAMP
 );
+```
 
+```
 ALTER TABLE "wallets" ADD CONSTRAINT "fk_user"
 FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+```
