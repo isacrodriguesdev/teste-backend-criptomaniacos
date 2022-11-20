@@ -226,7 +226,10 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "balance": { "type": "number" },
+                    "balance": { 
+                      "type": "number",
+                      "description": "Saldo total das carteiras"
+                    },
                     "wallets": {
                       "type": "array",
                       "items": {
@@ -312,10 +315,12 @@
             "type": "string"
           },
           "apiKey": {
-            "type": "string"
+            "type": "string",
+            "description": "API Key da corretora binance"
           },
           "apiSecret": {
-            "type": "string"
+            "type": "string",
+            "description": "API Secret da corretora binance"
           }
         }
       },
@@ -350,10 +355,12 @@
         "type": "object",
         "properties": {
           "asset": {
-            "type": "string"
+            "type": "string",
+            "description": "Tipo de moeda"
           },
           "balance": {
-            "type": "number"
+            "type": "number",
+            "description": "Saldo da carteira"
           }
         }
       },
@@ -370,10 +377,12 @@
             "type": "number"
           },
           "asset": {
-            "type": "string"
+            "type": "string",
+            "description": "Tipo de moeda"
           },
           "balance": {
-            "type": "number"
+            "type": "number",
+            "description": "Saldo da carteira"
           },
           "createdAt": {
             "type": "string"
