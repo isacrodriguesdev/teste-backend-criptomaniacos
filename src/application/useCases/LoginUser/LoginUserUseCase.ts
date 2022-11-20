@@ -28,7 +28,7 @@ export class LoginUserUseCase {
       if (correctPassword) {
         const token = this.authorizationController.createToken(user);
         
-        const { password, apiKey, apiSecret, ...restUser } = user
+        const { password, apiKey, apiSecret, ...restUser }: any = user
 
         return {
           status: 200,
