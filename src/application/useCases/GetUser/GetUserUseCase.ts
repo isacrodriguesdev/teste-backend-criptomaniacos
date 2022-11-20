@@ -12,7 +12,7 @@ export class GetUserUserCase {
     try {
       const user = await this.userRepository.findById(httpRequest.user.id)
 
-      const { password, ...rest } = user;
+      const { password, apiKey, apiSecret, ...rest } = user;
 
       return {
         status: 200,
