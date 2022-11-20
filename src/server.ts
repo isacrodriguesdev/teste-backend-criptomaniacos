@@ -1,3 +1,6 @@
+import * as dotenv from 'dotenv'
+dotenv.config()
+
 import express from "express";
 import swaggerUi from "swagger-ui-express";
 import swaggerDocs from "./swagger.json";

@@ -1,14 +1,13 @@
 import knex from "knex"
-// @ts-ignore
-import knexStringcase from 'knex-stringcase';
+const knexStringcase = require('knex-stringcase'); 
 
 const configFromKnexReadme = {
-  client: 'pg',
+  client: process.env.DB_CLIENT,
   connection: {
-    host: 'peanut.db.elephantsql.com',
-    user: 'ovbiwmxw',
-    database: 'ovbiwmxw',
-    password: 'DhSraA7-SsMfYOxype0g896yBH6nE3Dw',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USERNAME,
+    database: process.env.DB_DATABASE,
+    password: process.env.DB_PASSWORD,
   },
   debug: false,
   pool: { min: 1, max: 3 }
