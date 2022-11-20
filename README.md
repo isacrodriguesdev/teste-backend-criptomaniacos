@@ -16,7 +16,7 @@ Registrar o saldo atual da carteira do cliente e retornar tanto a composição q
     
 ## Database postgres structure
 
-´´´mysql
+´´´
 CREATE TABLE users (
 	id serial PRIMARY KEY,
     uuid VARCHAR (255) UNIQUE NOT NULL,
