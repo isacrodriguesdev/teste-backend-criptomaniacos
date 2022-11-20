@@ -1,4 +1,4 @@
-# REST API application
+# REST API
 
 Registrar o saldo atual da carteira do cliente e retornar tanto a composição quanto o valor total da carteira em USD
 
@@ -13,4 +13,3 @@ Registrar o saldo atual da carteira do cliente e retornar tanto a composição q
 ## Api Documentation
 
     http://localhost:4000/api-docs
-# teste-be-backend
