@@ -252,7 +252,7 @@
     },
     "/binance/wallet": {
       "get": {
-        "summary": "Obter todas as carteiras da corretora",
+        "summary": "Obter todas as carteiras com saldo da corretora",
         "description": "Dados direto da corretora binance do usuário",
         "tags": [
           "Wallets"
