@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { HttpRequest, HttpResponse } from "../../protocols/Http";
-import { CreateWalletFactory } from "./CreateUserFactory";
+import { CreateWalletFactory } from "./CreateWalletFactory";
 
 export class CreateWalletController {
 
