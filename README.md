@@ -2,6 +2,9 @@
 
 Registrar o saldo atual da carteira do cliente e retornar tanto a composição quanto o valor total da carteira em USD
 
+## Info
+Esse projeto foi feito seguindo os principios SOLID, complementado com design patterns ADAPTER e FACTORY
+
 ## Install
 
     npm install
