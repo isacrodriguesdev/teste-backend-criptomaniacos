@@ -1,4 +1,4 @@
-import { PostgresWalletRepository } from "../../repositories/implementations/PostgresWalletRepository";
+import { PostgresWalletRepository } from "../../repositories/controllers/PostgresWalletRepository";
 import { CreateWalletUseCase } from "./CreateWalletUseCase";
 
 export function CreateWalletFactory() {

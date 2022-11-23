@@ -1,11 +1,10 @@
-
-import { BinanceControllerAdapter } from "../../../main/exchanges/Binance/BinanceControllerAdapter";
-import { PostgresUserRepository } from "../../repositories/implementations/PostgresUserRepository";
+import { BinanceController } from "../../../main/exchanges/binance/BinanceController";
+import { PostgresUserRepository } from "../../repositories/controllers/PostgresUserRepository";
 import { GetExchangeWalletsUseCase } from "./GetExchangeWalletsUseCase";
 
 export function GetExchangeWalletsFactory() {
   const postgresUserRepository = new PostgresUserRepository();
-  const binanceControllerAdapter = new BinanceControllerAdapter();
+  const binanceController = new BinanceController();
 
-  return new GetExchangeWalletsUseCase(postgresUserRepository, binanceControllerAdapter)
+  return new GetExchangeWalletsUseCase(postgresUserRepository, binanceController)
 }

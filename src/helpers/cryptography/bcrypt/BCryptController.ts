@@ -2,7 +2,7 @@
 import bcrypt from "bcrypt"
 import { IEncryptionController } from "../IEncryptionController"
 
-export class BCryptControllerAdpter implements IEncryptionController {
+export class BCryptController implements IEncryptionController {
 
   genPassword(password: string, saltRounds: number = 10): Promise<string> {
     return new Promise<string>((resolve, reject) => {

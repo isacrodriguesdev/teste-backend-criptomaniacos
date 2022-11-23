@@ -1,12 +1,12 @@
-import { BCryptControllerAdpter } from "../../../helpers/cryptography/bcrypt/BCryptControllerAdapter";
-import { JwtControllerAdapter } from "../../../helpers/cryptography/jwt/JwtControllerAdapter";
-import { PostgresUserRepository } from "../../repositories/implementations/PostgresUserRepository";
+import { BCryptController } from "../../../helpers/cryptography/bcrypt/BCryptController";
+import { JwtController } from "../../../helpers/cryptography/jwt/JwtController";
+import { PostgresUserRepository } from "../../repositories/controllers/PostgresUserRepository";
 import { LoginUserUseCase } from "./LoginUserUseCase";
 
 export function LoginUserFactory() {
   const postgresUserRepository = new PostgresUserRepository();
-  const bCryptControllerAdpter = new BCryptControllerAdpter();
-  const jwtControllerAdapter = new JwtControllerAdapter();
+  const bCryptController = new BCryptController();
+  const jwtController = new JwtController();
 
-  return new LoginUserUseCase(postgresUserRepository, bCryptControllerAdpter, jwtControllerAdapter)
+  return new LoginUserUseCase(postgresUserRepository, bCryptController, jwtController)
 }

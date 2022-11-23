@@ -1,13 +1,13 @@
 import { CreateUserFactory } from "./CreateUserFactory";
 import { HttpRequest } from "../../protocols/Http";
-import { BCryptControllerAdpter } from "../../../helpers/cryptography/bcrypt/BCryptControllerAdapter";
-import { PostgresUserRepository } from "../../repositories/implementations/PostgresUserRepository";
+import { BCryptController } from "../../../helpers/cryptography/bcrypt/BCryptController";
+import { PostgresUserRepository } from "../../repositories/controllers/PostgresUserRepository";
 
 describe("User", () => {
   it('should create a new user', async () => {
 
     const createUserFactory = CreateUserFactory();
-    const encryptionController = new BCryptControllerAdpter();
+    const encryptionController = new BCryptController();
     const userRepository = new PostgresUserRepository();
 
     const httpRequest: HttpRequest = {

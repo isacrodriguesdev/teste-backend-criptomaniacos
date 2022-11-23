@@ -1,4 +1,4 @@
-import { PostgresUserRepository } from "../../repositories/implementations/PostgresUserRepository";
+import { PostgresUserRepository } from "../../repositories/controllers/PostgresUserRepository";
 import { GetUserUserCase } from "./GetUserUseCase";
 
 export function GetUserFactory() {

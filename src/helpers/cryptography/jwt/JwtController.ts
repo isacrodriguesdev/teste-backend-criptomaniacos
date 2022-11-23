@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken"
 import { User } from "../../../domain/entities/User"
 import { IAuthorizationController } from "../IAuthorizationController"
 
-export class JwtControllerAdapter implements IAuthorizationController {
+export class JwtController implements IAuthorizationController {
 
   private secretKey: string = "6ar^gi7fw^7r3h4cBwJAoiyd9d9CeU#%Je9yaRo2$bDPawLrXGBUXEE%2xbD^";
 

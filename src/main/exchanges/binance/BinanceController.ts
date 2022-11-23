@@ -2,7 +2,7 @@ import Binance, { Binance as IBinance } from "binance-api-node"
 import { User } from "../../../domain/entities/User";
 import { ICurrency, IExchangeController } from "../IExchangeController";
 
-export class BinanceControllerAdapter implements IExchangeController {
+export class BinanceController implements IExchangeController {
 
   private getClient(user: User) {
     return Binance({
